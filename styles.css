@@ -1,4 +1,9 @@
-/* ===== UI/UX 1: warna, tipografi, tata letak ===== */
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}/* ===== UI/UX 1: warna, tipografi, tata letak ===== */
 :root {
   --ink: #16213a;
   --blue: #2a56e8;
