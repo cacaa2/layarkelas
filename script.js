@@ -4,8 +4,7 @@ function showTime() {
 showTime();
 setInterval(function () {
 	showTime();
-}, 1000); 
-// ===== SE 1: perhitungan dasar =====
+}, 1000);// ===== SE 1: perhitungan dasar =====
 function formatRupiah(angka) {
   return "Rp" + angka.toLocaleString("id-ID");
 }
