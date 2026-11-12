@@ -2,10 +2,10 @@ body{
   padding: 25px;
 }
 .title {
-	color: #5C6AC4;
-}/* ===== UI/UX 1: warna, tipografi, tata letak ===== */
+	color: #16095b;
+} /* ===== UI/UX 1: warna, tipografi, tata letak ===== */
 :root {
-  --ink: #16213a;
+  --ink: #3052a1;
   --blue: #2a56e8;
   --blue-dark: #1d3fb8;
   --sun: #ffc83d;
