@@ -3,7 +3,7 @@
 **Kelas:** WebDev B
 **Kelompok:** 6
 **Tema Bisnis:** Akademi Kursus Daring Desain Antarmuka dan Pengalaman Pengguna
-**Link Website (GitHub Pages):** https://Kelompok6.github.io/DesainUpAcademy/
+**Link Website (GitHub Pages):** https://cacaa2.io/layarkelas/
 
 ## Daftar Anggota
 
