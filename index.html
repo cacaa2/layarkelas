@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+
   <body>
-      <h1 class="title">Hello World!</h1>
+      <h1 class="title">LAYAR KELAS🎓</h1>
       <p id="currentTime"></p>
       <script src="script.js"></script>
   </body>
-</html> <!-- ===== PM 1: HERO SECTION ===== -->
-<section id="hero-section" data-role="PM">
-  <div class="hero-content">
-    <h1>Kuasai Desain UI/UX dari Nol hingga Siap Kerja</h1>
-    <p>DesignUp Academy adalah akademi kursus daring yang membantu kamu belajar desain antarmuka dan pengalaman pengguna secara terarah, fleksibel, dan langsung praktik, dari dasar desain visual hingga portofolio profesional.</p>
-    <ul class="hero-benefits">
-      <li>Belajar fleksibel kapan saja dan di mana saja secara daring</li>
-      <li>Materi bertahap dengan praktik langsung pada proyek nyata</li>
-      <li>Hasil akhir berupa portofolio yang siap dikirim ke perusahaan</li>
-    </ul>
-    <a href="#calc-section" class="btn-cta">Hitung Biaya Belajar</a>
-  </div>
-</section>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LayarKelas - Akademi Kursus Daring UI/UX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<!-- ===== PM 2: CATALOG SECTION ===== -->
-<section id="catalog-section" data-role="PM">
-  <h2>Pilihan Kelas</h2>
-  <p class="catalog-intro">Pilih kelas yang sesuai dengan tahap belajarmu.</p>
-  <div class="catalog-grid">
-
-    <div class="catalog-card">
-      <h3>Kelas Dasar Desain Visual</h3>
-      <p>Mempelajari prinsip dasar desain: warna, tipografi, tata letak, dan penggunaan Figma untuk pemula. Cocok untuk kamu yang baru mulai.</p>
-      <p class="price">Rp150.000 / bulan</p>
-      <p class="promo">Gunakan kode <strong>DESIGN10</strong> untuk diskon 10%</p>
+  <!-- ===== CEO: HEADER ===== -->
+  <header id="header-section" data-role="CEO">
+    <div class="container bar">
+      <a class="brand" href="#hero-section">LayarKelas</a>
+      <nav>
+        <a href="#hero-section">Beranda</a>
+        <a href="#catalog-section">Katalog</a>
+        <a href="#calc-section">Kalkulator</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="catalog-card">
-      <h3>Kelas Sistem Desain</h3>
-      <p>Belajar menyusun design system: komponen, style guide, dan konsistensi antarmuka agar desain mudah dikembangkan oleh tim.</p>
-      <p class="price">Rp250.000 / bulan</p>
-      <p class="promo">Gunakan kode <strong>DESIGN10</strong> untuk diskon 10%</p>
+  <main>
+    <!-- ===== PM 1: HERO ===== -->
+    <section id="hero-section" data-role="PM">
+      <div class="container hero">
+        <h1>Belajar desain antarmuka sampai punya portofolio sendiri</h1>
+        <p>LayarKelas adalah akademi kursus daring untuk mahasiswa yang ingin belajar UI/UX dari dasar. Materi disusun bertahap dan bisa dipelajari sesuai jadwalmu.</p>
+        <ul class="points">
+          <li>Materi dimulai dari nol, tanpa syarat latar belakang desain</li>
+          <li>Akses materi fleksibel, bisa dipilih per bulan</li>
+          <li>Setiap kelas berakhir dengan latihan yang bisa dipajang</li>
+        </ul>
+        <a class="btn" href="#calc-section">Hitung Biaya Kelas</a>
+      </div>
+    </section>
+
+    <!-- ===== PM 2: KATALOG ===== -->
+    <section id="catalog-section" data-role="PM">
+      <div class="container">
+        <h2>Pilih kelas yang sesuai</h2>
+        <p class="sub">Harga per bulan akses materi.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Kelas Dasar Desain Visual</h3>
+            <p>Warna, tipografi, tata letak, dan pengenalan Figma. Cocok untuk yang baru mulai.</p>
+            <p class="price">Rp150.000 <span>/ bulan</span></p>
+            <p class="promo">Kode promo: BISDIG</p>
+          </article>
+          <article class="card featured">
+            <h3>Kelas Sistem Desain</h3>
+            <p>Komponen, grid, dan panduan gaya agar desain konsisten di banyak halaman.</p>
+            <p class="price">Rp250.000 <span>/ bulan</span></p>
+            <p class="promo">Kode promo: BISDIG</p>
+          </article>
+          <article class="card">
+            <h3>Kelas Portofolio Profesional</h3>
+            <p>Mengerjakan studi kasus lengkap, mulai dari riset, prototipe, sampai presentasi, dengan umpan balik mentor.</p>
+            <p class="price">Rp400.000 <span>/ bulan</span></p>
+            <p class="promo">Kode promo: BISDIG</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SE 1: KALKULATOR ===== -->
+    <section id="calc-section" data-role="SE">
+      <div class="container">
+        <h2>Kalkulator biaya kelas</h2>
+        <p class="sub">Diskon 10% dengan kode BISDIG atau akses minimal 3 bulan.</p>
+        <div class="calc-box">
+          <label for="paket">Pilih kelas</label>
+          <select id="paket">
+            <option value="150000">Kelas Dasar Desain Visual - Rp150.000</option>
+            <option value="250000">Kelas Sistem Desain - Rp250.000</option>
+            <option value="400000">Kelas Portofolio Profesional - Rp400.000</option>
+          </select>
+
+          <label for="jumlah">Jumlah bulan akses materi</label>
+          <input type="number" id="jumlah" min="1" value="1">
+
+          <label for="promo">Kode promo (opsional)</label>
+          <input type="text" id="promo" placeholder="Contoh: BISDIG">
+
+          <button type="button" id="btn-hitung" class="btn">Hitung</button>
+          <div id="hasil" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== CEO: FOOTER ===== -->
+  <footer id="footer-section" data-role="CEO">
+    <div class="container">
+      <p>&copy; 2026 LayarKelas. Kelas WebDev B - Kelompok 6</p>
+      <p>Tim: [Nama CEO], [Nama PM 1], [Nama PM 2], [Nama UI/UX 1], [Nama UI/UX 2], [Nama SE 1], [Nama SE 2]</p>
     </div>
+  </footer>
 
-    <div class="catalog-card">
-      <h3>Kelas Portofolio Profesional</h3>
-      <p>Menyusun studi kasus UI/UX, mendapat review dari mentor, dan menyiapkan portofolio yang siap digunakan untuk melamar kerja.</p>
-      <p class="price">Rp350.000 / bulan</p>
-      <p class="promo">Gunakan kode <strong>DESIGN10</strong> untuk diskon 10%</p>
-    </div>
-
-  </div>
-</section>
+  <script src="script.js"></script>
+</body>
+</html>
